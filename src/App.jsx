@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import Favorites from './components/Favorites';
-import CountryInfo from './components/CountryInfo';
+import CardInfo from './components/CardInfo';
 import NavBar from './components/NavBar';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/favorites" element={<Favorites />} />
-        <Route path="/country/:countryName" element={<CountryInfo />} />
+        <Route path="/card/:cardId" element={<CardInfo />} />
       </Routes>
     </Router>
   );
