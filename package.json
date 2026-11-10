@@ -16,7 +16,8 @@
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.3.1",
     "react-infinite-scroll-component": "^7.2.1",
-    "react-router-dom": "^7.18.5"
+    "react-router-dom": "^7.18.5",
+    "react-social-media-embed": "^2.5.18"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

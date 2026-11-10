@@ -1,19 +1,18 @@
-import React from 'react';
+
 import Nav from 'react-bootstrap/Nav';
+
 
 function NavBar() {
   return (
+    <div className='container-fluid'>
     <nav className="navbar navbar-inverse">
-    <div container-fluid>
-      <Nav className="navbar-brand">
-        Pokemon TCG Cards Explorer
-      </Nav>
-    </div>
-      <ul className="nav-links">
+      <ul className="nav-links me-auto mb-2 mb-lg-0">
         <li><a href="/">Home</a></li>
-        <li><a href="/favorites">Favorites</a></li>
+        <li><a href="/how-to-play">How To Play</a></li>
+        
       </ul>
     </nav>
+    </div>
   );
 }
      

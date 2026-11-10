@@ -1,7 +1,6 @@
-import React from 'react';
 
 import {useState, useEffect} from 'react';
-import {Link} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -13,6 +12,7 @@ function HomePage() {
     const [setName, setSetName] = useState('');
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
       
@@ -51,13 +51,13 @@ function HomePage() {
             <Row xs={2} md={4} className="g-3">
                 {cards.map((card) => (
                     <Col key={card.id}>
-                        <Link to={`/card/${card.id}`}>
-                            <img src={`${card.image}/low.webp`} 
-                            alt={card.name} 
-                            title={card.name} 
-                            className="img-fluid" 
-                            loading="lazy" />
-                        </Link>
+                         <img src={`${card.image}/low.webp`} 
+                         alt={card.name} 
+                         title={card.name} 
+                         className="img-fluid" 
+                         loading="lazy"
+                         onClick={() => navigate(`/card/${card.id}`)}
+                         />  
                     </Col>
                 ))}
             </Row>
