@@ -25,7 +25,7 @@ function HomePage() {
         }
         const data = await sets.json();
         setSetName(data.name);
-        setCards((data.cards ?? []).filter((c) => c.image).slice(0,8));
+        setCards(data.cards);
       } catch (error) {
         setError("Failed to fetch cards. Please try again later.");
       } finally {

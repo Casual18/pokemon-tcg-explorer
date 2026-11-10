@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/how-to-play" element={<HowToPlay />} />
-        <Route path="/card/:cardId" element={<CardInfo />} />
+        <Route path="/card/:id" element={<CardInfo />} />
       </Routes>
     </Router>
   );
