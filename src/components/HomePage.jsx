@@ -57,6 +57,7 @@ function HomePage() {
                          className="img-fluid" 
                          loading="lazy"
                          onClick={() => navigate(`/card/${card.id}`)}
+                         onMouseOver={(e) => e.currentTarget.style.cursor = 'pointer'}
                          />  
                     </Col>
                 ))}
