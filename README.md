@@ -1,16 +1,60 @@
-# React + Vite
+# Pokemon TCG Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Description 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project shows a website, which, upon loading, shows a Home Page with Navigation Bar on top, after which comes a gridpane of Pokemon TCG - cards. Then clicking on the card, a different screen pops up, which shows details about the chosen card. After the card description there is a "Back to Home"- button, which takes you back to Home Page. Then clicking on "How to Play" - link on Navigation Bar, it opens a screen with embedded YouTube - video about how to play Pokemon TCG.
 
-## React Compiler
+## Key features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Project contains three screens: "Home Page", "Card Info" and "How to Play".
+- Home Page shows a scrollable gridpane of Pokemon cards.
+- Upon clicking the card, a "Card" - screen opens up with details about the chosen card.
+- Navigation bar contains links to "Home"- and "How to Play" - screens.
+- Navigation bars "How to Play" - link opens up a page with embedded YouTube - video, which shows the rules of Pokemon TCG.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Requirements
+- Node.js (v 18+) (https://nodejs.org/)
+- npm
+- React (built with Vite)
+- React Router (HashRouter)
+- Bootstrap/React-Bootstrap
+- react-social-media-embed
+- TCGdex API (free public API)
+
+### API
+- https://api.tcgdex.net./v2/en/sets/base1 (list of cards)
+- https://api.tcgdex.net./v2/en/sets/base1/{id} (details of a single card)
+
+## Installation and Running Locally
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/pokemon-tcg-explorer.git
+    cd pokemon-tcg-explorer
+    ```
+
+2. Install dependencies:
+    ```bash
+    npm install react-router-dom
+    npm install bootstrap
+    npm install react-bootstrap
+    npm install react-infinite-scroll-component
+    npm install react-social-media-embed
+    ```
+
+3. Start development server:
+    ```bash
+    npm run dev
+    ```
+
+3. Open the address printed in terminal:
+    ```bash
+    https://localhost:5173/pokemon-tcg-explorer/
+    ```
+
+## Credits
+- Card data and images: https://tcgdex.dev/
+- Pokemon and its card artwork belong to their respective owners. This project is for educational purposes only.
