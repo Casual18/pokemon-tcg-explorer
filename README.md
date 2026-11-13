@@ -20,8 +20,8 @@ This project shows a website, which, upon loading, shows a Home Page with Naviga
 - npm
 - React (built with Vite)
 - React Router (HashRouter)
-- Bootstrap/React-Bootstrap
-- react-social-media-embed
+- Bootstrap/React-Bootstrap (styling)
+- react-social-media-embed (embedding social media)
 - TCGdex API (free public API)
 
 ### API
